@@ -1,0 +1,87 @@
+/* App.css */
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.candidates-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+/* App.css */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color: #007bff; /* Altera a cor de fundo para azul */
+  transition: left 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra para destacar o menu */
+  display: flex; /* Exibe os itens do menu lado a lado */
+  flex-direction: column; /* Define a direção da flexbox como coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.menu.open {
+  left: 0;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  left: 10px; /* Ajusta a posição para a esquerda */
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 100; /* Garante que o botão do menu esteja acima de outros elementos */
+}
+
+.menu-toggle:hover {
+  color: #ccc; /* Altera a cor do texto quando o cursor está sobre o botão */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 10px;
+  display: block; /* Define os itens do menu como blocos */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000; /* Altera a cor da fonte para preto */
+  font-size: 18px;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+
+nav ul li a:hover {
+  background-color: #0056b3; /* Altera a cor de fundo quando o cursor está sobre o link */
+  color: #fff; /* Altera a cor da fonte para branco ao passar o cursor sobre o link */
+}
+
+.content {
+  margin-left: 200px;
+}

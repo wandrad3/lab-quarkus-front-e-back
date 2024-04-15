@@ -1,0 +1,19 @@
+/* Header.css */
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+  font-family: 'Arial Black', sans-serif; /* Fonte mais destacada */
+}
+
+.header-logo {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-text {
+  display: inline-block;
+  vertical-align: middle;
+}
